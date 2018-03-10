@@ -101,3 +101,4 @@ Generate the following:
 
 ## Thinks to
 - [laralib/l5scaffold](https://github.com/laralib/l5scaffold)
+- [summerblue/generator](https://github.com/summerblue/generator)
