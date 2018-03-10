@@ -1,6 +1,6 @@
 <?php
 
-namespace Summerblue\Generator\Tests;
+namespace Wanglelecc\Generator\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnit;
 

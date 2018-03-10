@@ -1,6 +1,6 @@
 <?php
 
-namespace Summerblue\Generator;
+namespace Wanglelecc\Generator;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -35,7 +35,7 @@ class GeneratorsServiceProvider extends ServiceProvider
 	private function registerScaffoldGenerator()
 	{
 		$this->app->singleton('command.larascaf.scaffold', function ($app) {
-			return $app['Summerblue\Generator\Commands\ScaffoldMakeCommand'];
+			return $app['Wanglelecc\Generator\Commands\ScaffoldMakeCommand'];
 		});
 
 		$this->commands('command.larascaf.scaffold');

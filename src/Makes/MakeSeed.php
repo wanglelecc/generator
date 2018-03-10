@@ -6,10 +6,10 @@
  * Time: 10:34 PM
  */
 
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
 
 class MakeSeed
 {

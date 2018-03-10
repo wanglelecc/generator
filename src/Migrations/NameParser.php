@@ -1,6 +1,6 @@
 <?php
 
-namespace Summerblue\Generator\Migrations;
+namespace Wanglelecc\Generator\Migrations;
 
 /**
  * Class NameParser

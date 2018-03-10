@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Administrator;
 
 use {{namespace}}Models\{{Model}};
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\{{Model}}Request;
+use App\Http\Requests\Administrator\{{Model}}Request;
 
 class {{Models}}Controller extends Controller
 {
@@ -17,29 +17,29 @@ class {{Models}}Controller extends Controller
 	public function index()
 	{
 		${{models}} = {{Model}}::paginate();
-		return view('{{models}}.index', compact('{{models}}'));
+		return backend_view('{{models}}.index', compact('{{models}}'));
 	}
 
     public function show({{Model}} ${{model}})
     {
-        return view('{{models}}.show', compact('{{model}}'));
+        return backend_view('{{models}}.show', compact('{{model}}'));
     }
 
 	public function create({{Model}} ${{model}})
 	{
-		return view('{{models}}.create_and_edit', compact('{{model}}'));
+		return backend_view('{{models}}.create_and_edit', compact('{{model}}'));
 	}
 
 	public function store({{Model}}Request $request)
 	{
 		${{model}} = {{Model}}::create($request->all());
-		return redirect()->route('{{prefix}}{{models}}.show', ${{model}}->id)->with('message', 'Created successfully.');
+		return redirect()->route('{{prefix}}{{models}}.index')->with('success', '添加成功.');
 	}
 
 	public function edit({{Model}} ${{model}})
 	{
         $this->authorize('update', ${{model}});
-		return view('{{models}}.create_and_edit', compact('{{model}}'));
+		return backend_view('{{models}}.create_and_edit', compact('{{model}}'));
 	}
 
 	public function update({{Model}}Request $request, {{Model}} ${{model}})
@@ -47,7 +47,7 @@ class {{Models}}Controller extends Controller
 		$this->authorize('update', ${{model}});
 		${{model}}->update($request->all());
 
-		return redirect()->route('{{prefix}}{{models}}.show', ${{model}}->id)->with('message', 'Updated successfully.');
+		return redirect()->route('{{prefix}}{{models}}.index')->with('success', '更新成功.');
 	}
 
 	public function destroy({{Model}} ${{model}})
@@ -55,6 +55,6 @@ class {{Models}}Controller extends Controller
 		$this->authorize('destroy', ${{model}});
 		${{model}}->delete();
 
-		return redirect()->route('{{prefix}}{{models}}.index')->with('message', 'Deleted successfully.');
+		return redirect()->route('{{prefix}}{{models}}.index')->with('success', '删除成功.');
 	}
 }

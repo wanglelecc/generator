@@ -13,7 +13,7 @@ class {{Model}}sTableSeeder extends Seeder
             }
         });
 
-        {{Model}}::insert(${{model}}s->toArray());
+        // {{Model}}::insert(${{model}}s->toArray());
     }
 
 }

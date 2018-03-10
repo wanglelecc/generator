@@ -1,6 +1,6 @@
 <?php
 
-namespace Summerblue\Generator;
+namespace Wanglelecc\Generator;
 
 class GeneratorException extends \Exception {
 

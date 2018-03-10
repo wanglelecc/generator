@@ -6,10 +6,10 @@
  * Time: 5:00 PM
  */
 
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
 use Illuminate\Container\Container;
 
 trait MakerTrait
@@ -173,11 +173,11 @@ trait MakerTrait
     {
         if($path == "controller")
         {
-            return './app/Http/Controllers/' . $file_name . '.php';
+            return './app/Http/Controllers/Administrator/' . $file_name . '.php';
         }
         elseif($path == "request")
         {
-            return './app/Http/Requests/'.$file_name.'.php';
+            return './app/Http/Requests/Administrator/'.$file_name.'.php';
         }
         elseif($path == "observer")
         {
@@ -205,19 +205,19 @@ trait MakerTrait
         }
         elseif($path == "view-index")
         {
-            return './resources/views/'.$file_name.'/index.blade.php';
+            return './resources/views/backend/'.$file_name.'/index.blade.php';
         }
         elseif($path == "view-edit")
         {
-            return './resources/views/'.$file_name.'/edit.blade.php';
+            return './resources/views/backend/'.$file_name.'/edit.blade.php';
         }
         elseif($path == "view-show")
         {
-            return './resources/views/'.$file_name.'/show.blade.php';
+            return './resources/views/backend/'.$file_name.'/show.blade.php';
         }
         elseif($path == "view-create")
         {
-            return './resources/views/'.$file_name.'/create.blade.php';
+            return './resources/views/backend/'.$file_name.'/create.blade.php';
         }
         elseif($path == "localization"){
             return './resources/lang/'.$file_name.'.php';

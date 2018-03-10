@@ -1,11 +1,11 @@
 <?php
 
-namespace Summerblue\Generator\Localizations;
+namespace Wanglelecc\Generator\Localizations;
 
 /**
  * Class SchemaParser
- * @package Summerblue\Generator\Migrations
- * @author Ryan Gurnick <ryangurnick@gmail.com>
+ * @package Wanglelecc\Generator\Migrations
+ * @author Wanglelecc <wanglelecc@gmail.com>
  */
 class SchemaParser
 {

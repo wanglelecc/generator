@@ -6,12 +6,12 @@
  * Time: 4:58 PM
  */
 
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
-use Summerblue\Generator\Migrations\SchemaParser;
-use Summerblue\Generator\Migrations\SyntaxBuilder;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Migrations\SchemaParser;
+use Wanglelecc\Generator\Migrations\SyntaxBuilder;
 
 class MakeView
 {
@@ -87,6 +87,7 @@ class MakeView
                 'form_fields_empty' => $this->getFields($metas['ui'], 'fillable'),
                 'form_fields_show' => $this->getFields($metas['ui'], 'show'),
                 'table_fields_header' => $this->getFields($metas['ui'], 'header'),
+                'table_fields_colgroup' => $this->getFields($metas['ui'], 'colgroup'),
                 'table_fields_content' => $this->getFields($metas['ui'], 'content'),
             ]
         );

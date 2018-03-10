@@ -1,13 +1,13 @@
 <?php
 
-namespace Summerblue\Generator\Migrations;
+namespace Wanglelecc\Generator\Migrations;
 
-use Summerblue\Generator\GeneratorException;
+use Wanglelecc\Generator\GeneratorException;
 
 
 /**
  * Class SyntaxBuilder with modifications by Fernando
- * @package Summerblue\Generator\Migrations
+ * @package Wanglelecc\Generator\Migrations
  * @author Jeffrey Way <jeffrey@jeffrey-way.com>
  */
 class SyntaxBuilder

@@ -6,12 +6,12 @@
  * Time: 10:34 PM
  */
 
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
-use Summerblue\Generator\Migrations\SchemaParser;
-use Summerblue\Generator\Migrations\SyntaxBuilder;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Migrations\SchemaParser;
+use Wanglelecc\Generator\Migrations\SyntaxBuilder;
 
 class MakeMigration
 {

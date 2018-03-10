@@ -1,5 +1,5 @@
 {
-  "name": "summerblue/generator",
+  "name": "wanglelecc/generator",
   "description": "Extend Laravel 5.5's generators scaffold.",
   "keywords": [
     "laravel",
@@ -17,6 +17,10 @@
     {
       "name": "Summer",
       "email": "summer@yousails.com"
+    },
+    {
+      "name": "Wanglelecc",
+      "email": "wanglelecc@yousails.com"
     }
   ],
   "require": {
@@ -34,7 +38,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Summerblue\\Generator\\GeneratorsServiceProvider"
+        "Wanglelecc\\Generator\\GeneratorsServiceProvider"
       ]
     }
   }

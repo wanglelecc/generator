@@ -1,22 +1,22 @@
 <?php
 
-namespace Summerblue\Generator\Commands;
+namespace Wanglelecc\Generator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Input;
-use Summerblue\Generator\Makes\MakeController;
-use Summerblue\Generator\Makes\MakeLayout;
-use Summerblue\Generator\Makes\MakeLocalization;
-use Summerblue\Generator\Makes\MakeMigration;
-use Summerblue\Generator\Makes\MakeModel;
-use Summerblue\Generator\Makes\MakeRoute;
-use Summerblue\Generator\Makes\MakerTrait;
-use Summerblue\Generator\Makes\MakeSeed;
-use Summerblue\Generator\Makes\MakeView;
-use Summerblue\Generator\Makes\MakeFormRequest;
-use Summerblue\Generator\Makes\MakePolicy;
-use Summerblue\Generator\Makes\MakeModelObserver;
+use Wanglelecc\Generator\Makes\MakeController;
+use Wanglelecc\Generator\Makes\MakeLayout;
+use Wanglelecc\Generator\Makes\MakeLocalization;
+use Wanglelecc\Generator\Makes\MakeMigration;
+use Wanglelecc\Generator\Makes\MakeModel;
+use Wanglelecc\Generator\Makes\MakeRoute;
+use Wanglelecc\Generator\Makes\MakerTrait;
+use Wanglelecc\Generator\Makes\MakeSeed;
+use Wanglelecc\Generator\Makes\MakeView;
+use Wanglelecc\Generator\Makes\MakeFormRequest;
+use Wanglelecc\Generator\Makes\MakePolicy;
+use Wanglelecc\Generator\Makes\MakeModelObserver;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -29,7 +29,7 @@ class ScaffoldMakeCommand extends Command
      *
      * @var string
      */
-    protected $name = 'make:scaffold';
+    protected $name = 'make:laracms-administrator';
 
     /**
      * The console command description.
@@ -260,8 +260,8 @@ class ScaffoldMakeCommand extends Command
                     'ui',
                     'ui',
                     InputOption::VALUE_OPTIONAL,
-                    'UI Framework to generate scaffold. (Default bs3 - bootstrap 3)',
-                    'bs3'
+                    'UI Framework to generate scaffold. (Default lay - layui)',
+                    'lay'
                 ],
                 [
                     'validator',

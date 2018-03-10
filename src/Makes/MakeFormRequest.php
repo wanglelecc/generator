@@ -1,10 +1,10 @@
 <?php
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
-use Summerblue\Generator\Validators\SchemaParser as ValidatorParser;
-use Summerblue\Generator\Validators\SyntaxBuilder as ValidatorSyntax;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Validators\SchemaParser as ValidatorParser;
+use Wanglelecc\Generator\Validators\SyntaxBuilder as ValidatorSyntax;
 
 class MakeFormRequest
 {

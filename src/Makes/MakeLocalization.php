@@ -6,12 +6,12 @@
  * Time: 10:34 PM
  */
 
-namespace Summerblue\Generator\Makes;
+namespace Wanglelecc\Generator\Makes;
 
 use Illuminate\Filesystem\Filesystem;
-use Summerblue\Generator\Commands\ScaffoldMakeCommand;
-use Summerblue\Generator\Localizations\SchemaParser as LocalizationsParser;
-use Summerblue\Generator\Localizations\SyntaxBuilder as LocalizationsBuilder;
+use Wanglelecc\Generator\Commands\ScaffoldMakeCommand;
+use Wanglelecc\Generator\Localizations\SchemaParser as LocalizationsParser;
+use Wanglelecc\Generator\Localizations\SyntaxBuilder as LocalizationsBuilder;
 
 class MakeLocalization
 {

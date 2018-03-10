@@ -1,6 +1,6 @@
 <?php
 
-namespace Summerblue\Generator\Tests;
+namespace Wanglelecc\Generator\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnit;
 
@@ -36,7 +36,7 @@ class CommandTest extends PHPUnit
     {
         $this->app = require __DIR__ . '/../vendor/laravel/laravel/bootstrap/app.php';
 
-        $this->app->register('Summerblue\Generator\GeneratorsServiceProvider');
+        $this->app->register('Wanglelecc\Generator\GeneratorsServiceProvider');
 
         $this->app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
     }

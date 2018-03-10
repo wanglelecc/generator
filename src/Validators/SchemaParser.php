@@ -1,10 +1,10 @@
 <?php
 
-namespace Summerblue\Generator\Validators;
+namespace Wanglelecc\Generator\Validators;
 
 /**
  * Class SchemaParser
- * @package Summerblue\Generator\Migrations
+ * @package Wanglelecc\Generator\Migrations
  * @author Ryan Gurnick <ryangurnick@gmail.com>
  */
 class SchemaParser
