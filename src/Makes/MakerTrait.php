@@ -142,7 +142,7 @@ trait MakerTrait
 
     protected function getDestinationViews($model)
     {
-        return "./resources/views/$model/";
+        return "./resources/views/backend/$model/";
     }
 
     /**
