@@ -19,7 +19,7 @@
 
     <form class="layui-form layui-form-pane" method="POST" action="{{ ${{model}}->id ? route('{{prefix}}{{models}}.update', ${{model}}->id) : route('{{prefix}}{{models}}.store') }}">
         {{ csrf_field() }}
-        <input type="hidden" name="_method" value="${{ {{prefix}}{{models}}->id ? 'PATCH' : 'POST' }}">
+        <input type="hidden" name="_method" value="{{ ${{prefix}}{{model}}->id ? 'PATCH' : 'POST' }}">
 
         {{form_fields_fillable}}
 
